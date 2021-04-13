@@ -3,6 +3,7 @@ import styled from "styled-components";
 import wave from "../Assets/images/wave.svg";
 import Linkedin from "../Assets/images/Linkedin.png";
 import Instagram from "../Assets/images/instagramLogin.png";
+import EyeLearn from "../Assets/images/EyeLearn.png";
 
 const Projects = ({ projects }) => {
   return (
@@ -13,7 +14,9 @@ const Projects = ({ projects }) => {
           <h1>EyeLearn</h1>
 
           <ProjectImg>
-            <div></div>
+            <div>
+              <img src={EyeLearn} alt="" />
+            </div>
           </ProjectImg>
         </Project>
         <Project>
