@@ -19,7 +19,6 @@ const Navbar = ({ projects, handlePorfolio }) => {
         <Nav isOpen={isOpen}>
           <NavLink>About</NavLink>
           <NavLink onClick={e => handlePorfolio(e)}>Portfolio</NavLink>
-          <NavLink>Services</NavLink>
           <NavLink>Contacts</NavLink>
         </Nav>
       </Container>
@@ -64,7 +63,7 @@ const NavLink = styled.a`
   color: #393e41;
   font-weight: 700;
   display: inline-block;
-  padding-left: 5vw;
+  padding-left: 8vw;
   transition: all 0.2s ease-in;
 
   &:hover {
