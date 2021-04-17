@@ -35,6 +35,7 @@ function App() {
         handleAbout={handleAbout}
       />
       <Me aboutMe={aboutMe} />
+
       <Projects projects={projects} />
       <Contacts contacts={contacts} />
     </div>

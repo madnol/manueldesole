@@ -23,7 +23,7 @@ const Navbar = ({ projects, handlePorfolio, handleContacts, handleAbout }) => {
         <Logo to="/">
           <h2
             style={
-              scrollY >= 700
+              scrollY >= 750
                 ? { color: "#f6f7eb" }
                 : { color: "#e4003a", transition: "color .2s ease-in" }
             }
@@ -41,7 +41,7 @@ const Navbar = ({ projects, handlePorfolio, handleContacts, handleAbout }) => {
             About
           </NavLink>
           <NavLink scroll={scrollY >= 700} onClick={e => handlePorfolio(e)}>
-            Portfolio
+            Works
           </NavLink>
           <NavLink scroll={scrollY >= 700} onClick={e => handleContacts(e)}>
             Contacts
