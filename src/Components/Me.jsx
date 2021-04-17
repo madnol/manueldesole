@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import Img from "../Assets/images/ManuelDesoleprofile.png";
 import "../style/style.css";
-const Me = () => {
+const Me = ({ aboutMe }) => {
   return (
-    <Container>
+    <Container ref={aboutMe}>
       <HeadLine>
         <h1>
           Hello there! <div className="shake-lr">👋</div> <br />
@@ -21,17 +21,18 @@ const Me = () => {
 
 const Container = styled.div`
   display: flex;
-
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
   width: 80%;
   margin: 2em auto;
+  padding-top: 7em;
   margin-bottom: 0;
 
   @media (max-width: 768px) {
     padding: 1em;
     justify-content: center;
+    padding-top: 7em;
   }
 `;
 
@@ -45,7 +46,7 @@ const Image = styled.div`
   width: 30vw;
   height: 30vw;
   border-radius: 100%;
-  background-color: red;
+  background-color: #e4003a;
   background-image: url(${Img});
   background-position: center;
   background-size: cover;

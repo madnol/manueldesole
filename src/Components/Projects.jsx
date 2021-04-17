@@ -15,7 +15,13 @@ const Projects = ({ projects }) => {
 
           <ProjectImg>
             <div>
-              <img src={EyeLearn} alt="" />
+              <a
+                href="https://eyelearn.vercel.app/home"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={EyeLearn} alt="" />
+              </a>
             </div>
           </ProjectImg>
         </Project>
@@ -23,7 +29,13 @@ const Projects = ({ projects }) => {
           <h1>Linkedin</h1>
           <ProjectImg>
             <div>
-              <img src={Linkedin} alt="" />
+              <a
+                href="https://linkedin-team3.herokuapp.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Linkedin} alt="" />
+              </a>
             </div>
           </ProjectImg>
         </Project>
@@ -32,7 +44,13 @@ const Projects = ({ projects }) => {
 
           <ProjectImg>
             <div>
-              <img src={Instagram} alt="" />
+              <a
+                href="https://ig-clone-zeta.vercel.app/login"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src={Instagram} alt="" />
+              </a>
             </div>
           </ProjectImg>
         </Project>
@@ -60,6 +78,7 @@ const Project = styled.div`
   width: 80%;
   margin: 0 auto;
   padding: 2em 0;
+  padding-bottom: 5em;
   display: flex;
   flex-wrap: wrap;
 
@@ -71,10 +90,6 @@ const Project = styled.div`
     display: flex;
     flex-grow: 1;
     transition: transform 0.3s;
-    &:hover {
-      cursor: pointer;
-      transform: scale(1.05);
-    }
   }
 `;
 
