@@ -10,7 +10,6 @@ const Me = ({ aboutMe }) => {
           Hello there! <div className="shake-lr">👋</div> <br />
           I'm a MERN stack developer
         </h1>
-        <Button>HOW CAN I HELP</Button>
       </HeadLine>
       <ImageContainer>
         <Image></Image>
